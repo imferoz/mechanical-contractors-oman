@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+Disallow: /admin/
+Crawl-delay: 3
+
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://mechanical-contractors-oman.alwejhagroup.com/sitemap.xml
