@@ -1,299 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Mechanical Contracting Services in Oman | AL WEJHA GROUP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./mechanical-contractor-oman.webp" type="image/webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Industrial Mechanical Contractors in Oman | AL WEJHA GROUP - Muscat, Sohar, Salalah</title>
+  <meta name="description" content="AL WEJHA GROUP: Certified Mechanical Contractors in Oman. Specializing in Industrial Piping, Equipment Installation & Plant Maintenance. Oman Ministry Approved Contractors.">
+  <link rel="canonical" href="https://mechanical-contractors-oman.alwejhagroup.com/">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Industrial Mechanical Contractors in Oman | AL WEJHA GROUP">
+  <meta property="og:description" content="Oman's Premier Mechanical Contracting Services - ASME-Compliant Installations & Maintenance for Industrial Facilities">
+  <meta property="og:image" content="https://mechanical-contractors-oman.alwejhagroup.com/mechanical-contractors-oman.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Certified Mechanical Contractors in Oman | AL WEJHA GROUP">
+  <meta name="twitter:description" content="Industrial-Grade Mechanical Solutions for Oman's Energy & Manufacturing Sectors">
+
+  <!-- Inline Critical CSS -->
   <style>
     :root {
-      --contractor-blue: #1a5276;
-      --safety-orange: #e67e22;
-      --tool-yellow: #f39c12;
-      --light-bg: #f5f7fa;
-      --steel-gray: #95a5a6;
+      --industrial-blue: #0a2840;
+      --safety-orange: #ff6b35;
+      --steel-gray: #2d3436;
+      --hazard-yellow: #ffd700;
     }
-    
     body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: var(--light-bg);
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
       margin: 0;
-      color: #333;
       line-height: 1.6;
+      color: var(--steel-gray);
+      background: #f8fafb;
     }
-    
-    header {
-      background: linear-gradient(to right, var(--contractor-blue), #154360);
-      color: white;
-      padding: 100px 20px;
+    .industrial-header {
+      background: linear-gradient(45deg, rgba(10,40,64,0.9), rgba(255,107,53,0.15)),
+                  url('mechanical-contractors-oman.webp') center/cover;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: #fff;
       position: relative;
-      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
-    
-    header::after {
-      content: "";
-      position: absolute;
-      bottom: -50px;
-      left: 0;
-      right: 0;
-      height: 100px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path fill="%23f5f7fa" d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" opacity=".25"/></svg>');
-      background-size: cover;
-      z-index: 1;
+    .plant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
     }
-    
-    header h1 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 2.8rem;
-      margin: 0 0 15px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+    .mechanical-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--safety-orange);
+      transition: transform 0.3s;
     }
-    
-    /* Contractor Navigation */
-    nav {
-      background-color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 0;
+    .mechanical-card:hover {
+      transform: translateY(-5px);
+    }
+    .sector-badge {
+      background: var(--hazard-yellow);
+      color: var(--industrial-blue);
+      padding: 6px 15px;
+      border-radius: 15px;
+      margin: 1rem 0;
+      display: inline-block;
+      font-weight: 700;
+    }
+    .industrial-nav {
       position: sticky;
       top: 0;
-      z-index: 100;
+      background: var(--industrial-blue);
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
-    
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
+    .nav-flex {
       display: flex;
       justify-content: center;
+      gap: 2rem;
       flex-wrap: wrap;
     }
-    
-    nav a {
-      margin: 0 15px;
-      color: var(--contractor-blue);
+    .nav-link {
+      color: #fff;
       text-decoration: none;
       font-weight: 600;
-      padding: 18px 0;
       position: relative;
-      transition: all 0.3s ease;
+      padding: 0.5rem 0;
     }
-    
-    nav a:hover {
-      color: var(--safety-orange);
-    }
-    
-    nav a::before {
+    .nav-link::after {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 3px;
-      background: var(--tool-yellow);
+      height: 2px;
+      background: var(--safety-orange);
       transform: scaleX(0);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s;
     }
-    
-    nav a:hover::before {
+    .nav-link:hover::after {
       transform: scaleX(1);
     }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      position: relative;
-      z-index: 2;
-    }
-    
-    .hero-img {
+    .plant-cta {
+      position: fixed;
+      bottom: 0;
       width: 100%;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin: 60px 0 40px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-      border: 1px solid rgba(0,0,0,0.08);
+      background: var(--industrial-blue);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      z-index: 1000;
+      border-top: 2px solid var(--safety-orange);
     }
-    
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin: 60px 0;
-    }
-    
-    .service-card {
-      background: white;
-      border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      transition: all 0.3s ease;
-      border: 1px solid rgba(0,0,0,0.1);
-      border-top: 4px solid var(--tool-yellow);
-    }
-    
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-    
-    /* Contractor CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, var(--contractor-blue), #154360);
-      color: white;
-      padding: 60px 20px;
-      margin: 60px 0;
-      border-radius: 8px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .cta-section::before {
-      content: "";
-      position: absolute;
-      top: -20px;
-      right: -20px;
-      width: 150px;
-      height: 150px;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff10"><rect width="20" height="20" x="10" y="10" rx="2"/><rect width="20" height="20" x="40" y="10" rx="2"/><rect width="20" height="20" x="70" y="10" rx="2"/><rect width="20" height="20" x="10" y="40" rx="2"/><rect width="20" height="20" x="40" y="40" rx="2"/><rect width="20" height="20" x="70" y="40" rx="2"/><rect width="20" height="20" x="10" y="70" rx="2"/><rect width="20" height="20" x="40" y="70" rx="2"/><rect width="20" height="20" x="70" y="70" rx="2"/></svg>');
-      background-size: contain;
-    }
-    
-    .cta-button {
-      display: inline-flex;
-      align-items: center;
-      background-color: var(--tool-yellow);
-      color: var(--contractor-blue);
-      padding: 14px 30px;
-      text-decoration: none;
+    .industrial-btn {
+      background: var(--safety-orange);
+      color: #fff;
+      padding: 12px 28px;
       border-radius: 4px;
-      margin: 10px 10px;
-      font-weight: 600;
-      transition: all 0.3s ease;
+      text-decoration: none;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s;
     }
-    
-    .cta-button:hover {
-      background-color: white;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    .industrial-btn:hover {
+      background: #ff5a1f;
+      box-shadow: 0 4px 12px rgba(255,107,53,0.3);
     }
-    
-    footer {
-      background: linear-gradient(to right, var(--contractor-blue), #154360);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-    
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      
-      .hero-img {
-        height: 350px;
-      }
-      
-      .service-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      nav a {
-        padding: 15px 10px;
-        margin: 0 8px;
-      }
+      .industrial-header { min-height: 60vh; }
+      .plant-grid { grid-template-columns: 1fr; }
+      .plant-cta { flex-wrap: wrap; gap: 1rem; }
     }
   </style>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Preload Hero Image -->
+  <link rel="preload" href="mechanical-contractors-oman.webp" as="image">
+  
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AL WEJHA GROUP Mechanical Contractors",
+    "image": "mechanical-contractors-oman.webp",
+    "description": "Oman's premier industrial mechanical contractors",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Oman",
+      "addressRegion": ["Muscat", "Sohar", "Salalah", "Duqm"]
+    },
+    "telephone": "+96879271055",
+    "email": "business@alwejhagroup.com",
+    "sameAs": ["https://www.alwejhagroup.com/"]
+  }
+  </script>
 </head>
+
 <body>
-  <header>
-    <h1>Mechanical Contracting Services</h1>
-    <p>Licensed mechanical contractors serving Oman since 2005</p>
+  <header class="industrial-header">
+    <div>
+      <h1>Industrial Mechanical Contractors in Oman</h1>
+      <p>Engineering Excellence for Oil & Gas, Manufacturing & Utilities</p>
+      <div style="margin-top: 2rem;">
+        <span class="sector-badge">Muscat Industrial</span>
+        <span class="sector-badge">Sohar Port</span>
+        <span class="sector-badge">Salalah FTZ</span>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <div class="nav-container">
-      <a href="https://www.alwejhagroup.com/"><i class="fas fa-home"></i> Home</a>
-      <a href="https://www.alwejhagroup.com/area-of-expertise"><i class="fas fa-cogs"></i> Expertise</a>
-      <a href="https://www.alwejhagroup.com/our-services"><i class="fas fa-tools"></i> Services</a>
-      <a href="https://www.alwejhagroup.com/our-clients"><i class="fas fa-users"></i> Clients</a>
-      <a href="https://www.alwejhagroup.com/contact"><i class="fas fa-envelope"></i> Contact</a>
+  <nav class="industrial-nav">
+    <div class="nav-flex">
+      <a href="https://www.alwejhagroup.com/" class="nav-link">Home</a>
+      <a href="https://www.alwejhagroup.com/area-of-expertise" class="nav-link">Expertise</a>
+      <a href="https://www.alwejhagroup.com/our-services" class="nav-link">Services</a>
+      <a href="https://www.alwejhagroup.com/contact" class="nav-link">Contact</a>
     </div>
   </nav>
 
-  <div class="container">
-    <img class="hero-img" 
-         src="./mechanical-contractor-oman.webp" 
-         alt="Mechanical contracting services in Oman"
-         loading="eager">
+  <main>
+    <section class="plant-grid">
+      <article class="mechanical-card">
+        <h2>Process Piping Systems</h2>
+        <div class="sector-badge">ASME B31.3 Certified</div>
+        <ul style="margin-top: 1rem;">
+          <li>✓ High-Pressure Pipeline Installation</li>
+          <li>✓ CS & SS Welding Services</li>
+          <li>✓ Hydrostatic Testing</li>
+          <li>✓ Corrosion Protection</li>
+        </ul>
+      </article>
 
-    <section>
-      <h2><i class="fas fa-hard-hat" style="color: var(--tool-yellow);"></i> Our Contracting Services</h2>
-      <p>AL WEJHA GROUP provides comprehensive mechanical contracting solutions for industrial and commercial projects throughout Oman, with Class A contractor certification.</p>
-      
-      <div class="service-grid">
-        <div class="service-card">
-          <h3><i class="fas fa-wrench"></i> Piping Systems</h3>
-          <ul>
-            <li>Process piping installation</li>
-            <li>Utility line construction</li>
-            <li>Pipeline fabrication</li>
-            <li>Pressure testing</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <h3><i class="fas fa-cog"></i> Equipment Installation</h3>
-          <ul>
-            <li>Rotating machinery setup</li>
-            <li>Pressure vessel installation</li>
-            <li>Alignment and leveling</li>
-            <li>Commissioning support</li>
-          </ul>
-        </div>
-        
-        <div class="service-card">
-          <h3><i class="fas fa-toolbox"></i> Maintenance Contracts</h3>
-          <ul>
-            <li>Preventive maintenance</li>
-            <li>Shutdown services</li>
-            <li>Equipment overhauls</li>
-            <li>24/7 emergency support</li>
-          </ul>
+      <article class="mechanical-card">
+        <h2>Heavy Equipment</h2>
+        <div class="sector-badge">API Standards</div>
+        <ul style="margin-top: 1rem;">
+          <li>✓ Turbine Installation</li>
+          <li>✓ Pressure Vessel Mounting</li>
+          <li>✓ Alignment & Grouting</li>
+          <li>✓ Commissioning Support</li>
+        </ul>
+      </article>
+
+      <article class="mechanical-card">
+        <h2>Plant Maintenance</h2>
+        <div class="sector-badge">Turnkey Solutions</div>
+        <ul style="margin-top: 1rem;">
+          <li>✓ Shutdown Management</li>
+          <li>✓ Predictive Maintenance</li>
+          <li>✓ Rotating Equipment Overhauls</li>
+          <li>✓ 24/7 Emergency Response</li>
+        </ul>
+      </article>
+    </section>
+
+    <section style="text-align: center; padding: 4rem 1rem; background: var(--industrial-blue); color: #fff;">
+      <h2>Oman-Wide Mechanical Contracting</h2>
+      <div style="max-width: 1000px; margin: 2rem auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+          <div class="sector-badge" style="background: #fff; color: var(--industrial-blue);">Muscat</div>
+          <div class="sector-badge" style="background: #fff; color: var(--industrial-blue);">Sohar</div>
+          <div class="sector-badge" style="background: #fff; color: var(--industrial-blue);">Salalah</div>
+          <div class="sector-badge" style="background: #fff; color: var(--industrial-blue);">Duqm</div>
+          <div class="sector-badge" style="background: #fff; color: var(--industrial-blue);">Sur</div>
+          <div class="sector-badge" style="background: #fff; color: var(--industrial-blue);">Nizwa</div>
         </div>
       </div>
     </section>
+  </main>
 
-    <section class="cta-section">
-      <h2>Need a Licensed Mechanical Contractor?</h2>
-      <p>Get in touch with our certified team</p>
-      <div>
-        <a href="/contact" class="cta-button"><i class="fas fa-file-alt"></i> Request Proposal</a>
-        <a href="/our-clients" class="cta-button"><i class="fas fa-building"></i> Our Projects</a>
-      </div>
-    </section>
-
-    <section style="background: rgba(26,82,118,0.05); padding: 40px; border-radius: 8px; border-left: 4px solid var(--tool-yellow);">
-      <h2><i class="fas fa-award" style="color: var(--tool-yellow);"></i> Why Contract With Us?</h2>
-      <ul>
-        <li>Omani Ministry-certified contractors</li>
-        <li>In-house engineering team</li>
-        <li>OSHA-compliant safety programs</li>
-        <li>Guaranteed workmanship</li>
-      </ul>
-    </section>
+  <div class="plant-cta">
+    <a href="https://wa.me/96879271055" class="industrial-btn" aria-label="WhatsApp Chat">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp
+    </a>
+    <a href="tel:+96879271055" class="industrial-btn" aria-label="Call Now">
+      📞 Call Now
+    </a>
+    <a href="mailto:business@alwejhagroup.com" class="industrial-btn" aria-label="Email Us">
+      ✉️ Email
+    </a>
   </div>
 
-  <footer>
-    <p>&copy; 2025 AL WEJHA GROUP | Mechanical Contracting Division</p>
-    <p>Licensed throughout the Sultanate of Oman</p>
+  <footer style="background: var(--industrial-blue); color: #fff; padding: 2rem; text-align: center;">
+    <p>© 2025 AL WEJHA GROUP - Certified Mechanical Contractors</p>
+    <nav style="margin-top: 1rem;">
+      <a href="https://www.alwejhagroup.com/privacy" style="color: var(--safety-orange); margin: 0 1rem;">Privacy Policy</a>
+      <a href="https://www.alwejhagroup.com/certifications" style="color: var(--safety-orange); margin: 0 1rem;">Certifications</a>
+      <a href="https://www.alwejhagroup.com/projects" style="color: var(--safety-orange); margin: 0 1rem;">Project Portfolio</a>
+    </nav>
   </footer>
+
+  <!-- Lazy Load Images -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => img.loading = 'lazy');
+    });
+  </script>
 </body>
 </html>
